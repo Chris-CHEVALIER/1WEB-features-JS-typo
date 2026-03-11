@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Step Interaction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Conteneur principal : panneau à gauche, scène à droite -->
+  <div id="app">
+
+    <!-- Panneau texte (caché par défaut) -->
+    <div id="panel">
+      <h2 id="step-title"></h2>
+      <p id="step-text"></p>
+    </div>
+
+    <!-- Zone centrale : image + boutons positionnés autour -->
+    <div id="scene">
+      <img id="image" src="./images/symbol.png" alt="symbol">
+
+      <!-- Bouton 1 à gauche de l'image -->
+      <button class="btn" data-step="1">1</button>
+      <!-- Boutons 2, 3, 4 à droite de l'image -->
+      <button class="btn" data-step="2">2</button>
+      <button class="btn" data-step="3">3</button>
+      <button class="btn" data-step="4">4</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

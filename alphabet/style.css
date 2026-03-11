@@ -9,6 +9,7 @@ body {
 /* Grille et affichage côte à côte */
 #app {
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 
@@ -16,7 +17,7 @@ body {
 #grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   max-width: 200px;
 }
 
