@@ -1,0 +1,53 @@
+/* Mise en page générale */
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Grille et affichage côte à côte */
+#app {
+  display: flex;
+  gap: 50px;
+}
+
+/* Conteneur de l'alphabet qui revient à la ligne */
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 200px;
+}
+
+/* Chaque caractère */
+#grid span {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  /* Transition fluide pour le zoom */
+  transition: transform 0.2s ease;
+}
+
+/* Zoom au survol */
+#grid span:hover {
+  transform: scale(1.5);
+}
+
+/* Zone d'affichage de la lettre cliquée */
+#affichage {
+  width: 140px;
+  height: 140px;
+  background-color: #e8f0fe;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 96px;
+  font-weight: bold;
+}
