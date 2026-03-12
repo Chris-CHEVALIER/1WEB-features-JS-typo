@@ -24,12 +24,19 @@ const panel = document.getElementById('panel')
 const scene = document.getElementById('scene')
 const title = document.getElementById('step-title')
 const text = document.getElementById('step-text')
+const closeBtn = document.getElementById('close-btn')
+
+// Ferme le panneau et remet l'image en place
+closeBtn.addEventListener('click', () => {
+  panel.classList.remove('visible')
+  scene.classList.remove('offset')
+})
 
 // Écoute du clic sur chaque bouton
 buttons.forEach(btn => {
   btn.addEventListener('click', () => {
     const step = btn.dataset.step // récupère "1", "2", "3" ou "4"
-
+    
     // Met à jour le texte du panneau
     title.textContent = texts[step].title
     text.textContent = texts[step].text
